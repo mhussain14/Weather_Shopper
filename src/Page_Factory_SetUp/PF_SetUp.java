@@ -74,8 +74,6 @@ public class PF_SetUp
     @Test
     public static void Pay_Amount() throws InterruptedException
     {
-        /*String xpth = "//form[@ class = \"checkoutView\"]";
-        driver.switchTo().window(xpth);*/
         driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@ name = \"stripe_checkout_app\"] ")));
         Thread.sleep(1000);
         Stripe ST = PageFactory.initElements(driver, Stripe.class);
@@ -106,7 +104,7 @@ public class PF_SetUp
     @Test
     public static void SunScreens() throws InterruptedException
     {
-        // GET_Request APITest = PageFactory.initElements(driver, GET_Request.class);
+        driver = Browser_SetUp.Launch_Browser(driver,"Firefox", "https://weathershopper.pythonanywhere.com/");
         Thread.sleep(5000);
         Sunscreens suns = PageFactory.initElements(driver, Sunscreens.class);
         suns.Verify_H3();
@@ -122,6 +120,21 @@ public class PF_SetUp
         HP.Verify_Link();
         Thread.sleep(3000);
         HP.Page_Name();
+    }
+    @Test
+    public static void Sunscreen_products() throws InterruptedException
+    {
+        Product_Details();
+    }
+    @Test
+    public static void Button_Add_To_Cart() throws InterruptedException
+    {
+        Check_The_Cart();
+    }
+    @Test
+    public static void Payment_Methods()  throws InterruptedException
+    {
+        Pay_Amount();
     }
     //@AfterTest
     public static void tearDown()

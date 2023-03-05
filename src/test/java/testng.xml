@@ -8,12 +8,17 @@
             <methods>
                 <include name="SetUP"></include>
                 <include name="Moisturizer"></include>
-               <!-- <include name="SunScreens"></include>-->
                 <include name="Product_Details"></include>
                 <include name="Check_The_Cart"></include>
                 <include name="Pay_Amount"></include>
                 <include name="Payment_Done_Successfully"></include>
                 <include name="Verify_Link"></include>
+                <!-- Sunscreen classes-->
+                <include name="SunScreens"></include>
+                <include name="Sunscreen_products"></include>
+                <include name="Button_Add_To_Cart"></include>
+                <include name="Payment_Methods"></include>
+
             </methods>
         </class>
     </classes>
