@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite"><test verbose="2" preserve-order="true" name="Weather Shopper">
+    <classes>
+       <!-- <class name="Page_Factory_SetUp.PF_SetUp">
+        </class>-->
+        <class name="Page_Factory_SetUp.PF_SetUp">
+            <methods>
+                <include name="SetUP"></include>
+                <include name="Moisturizer"></include>
+               <!-- <include name="SunScreens"></include>-->
+                <include name="Product_Details"></include>
+                <include name="Check_The_Cart"></include>
+                <include name="Pay_Amount"></include>
+                <include name="Payment_Done_Successfully"></include>
+                <include name="Verify_Link"></include>
+            </methods>
+        </class>
+    </classes>
+</test>
+</suite>
